@@ -1,0 +1,169 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+
+    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.img-circle{
+    margin: 0 auto;
+    display: block;
+    border-radius: 50%;
+}
+
+main,section,footer{
+    padding: 60px 0px;
+}
+
+.badge{
+    margin: 8px 0;
+    color: white;
+    display: inline-block;
+    padding: 2px 2px;
+    border-radius: 5px;
+}
+
+.bg-red{
+    background-color: red;
+}
+
+a[target="_blank"]::after{
+    content:'↗️';
+}
+
+main{
+    padding: 60px 0px;
+
+    h1{
+       font-size: 3.5rem;
+       font-weight: 100;
+       text-align: center;
+       margin-top: 0.8em;
+
+    }
+}
+section{
+    text-align: center;
+
+    h2{
+        font-size: 2rem;
+    }
+}
+
+.lectures{
+    margin: 50px 0px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card{
+    border: 1px solid #e3e3e3;
+    border-radius: 7px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+
+    i{
+        font-size: 60px;
+    }
+
+    a{
+        display: inline-block;
+        margin: 20px;
+    }
+
+}
+
+.logo{
+    width: 200px;
+    display: inline-block;
+    margin-top: 20px;
+}
+main,footer{
+    background-color: rgb(248,249,250);
+}
+
+footer{
+    .container{
+    display: flex;
+    justify-content: space-between;
+    }
+   
+
+
+
+ul{
+    list-style-type: none;
+    display: flex;
+
+    a{
+        margin-left: 20px;
+    }
+}
+
+}
+
+@media(max-width:600px){
+    .container{
+        width: 90%;
+    }
+
+    main{
+        image{
+            width: 110px;
+        }
+
+        h1{
+            font-size: 1.8rem;
+        }
+
+
+    }
+
+    section{
+        h2{
+            font-size: 1.2rem;
+        }
+
+        .lectures{
+            grid-template-columns: 1fr;
+        }
+
+        .logo{
+            width: 50%;
+        }
+
+
+    }
+
+    footer{
+        .container{
+            flex-direction: column;
+        }
+
+        p{
+            text-align: center;
+        }
+     
+        ul{
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            
+            a{
+                margin-left: 0px;
+
+            }
+        }
+        
+
+
+    }
+}
